@@ -1,0 +1,25 @@
+
+example of a core dump
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+        int* n = NULL;
+        printf("%d\n", *n);
+        return 0;
+}
+
+
+[rgodbee1@cloudland class]$ gcc -g -o play play.c
+[rgodbee1@cloudland class]$ ls
+play  play.c
+[rgodbee1@cloudland class]$ ./play
+Segmentation fault (core dumped)
+[rgodbee1@cloudland class]$
+
+************************************************
+ch5 not on test
+
+callback function 
+f( function pointer )
